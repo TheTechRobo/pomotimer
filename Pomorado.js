@@ -20,7 +20,7 @@ const yourFunction = async () => { //https://stackoverflow.com/a/47480429/965408
 for(var times = 120;var i=0; i < times; i++){ await delay(WORK) }
   document.getElementById("bigbold").innerHTML = "Currently On: <b><u>BREAK</u></b>";
 Notif1("Break time!","Pomotimer alert: BREAK!");
-  for(var times = 120;var i=0; i < times; i++){ await delay(WORK) }
+  for(var times = 120;var i=0; i < times; i++){ await delay(WORK) }//https://stackoverflow.com/a/10993837/9654083
   document.getElementById("bigbold").innerHTML = "Currently On: <b><u>WORK</u></b>";
 		document.getElementById("placeToRest").innerHTML = ""
 	}
