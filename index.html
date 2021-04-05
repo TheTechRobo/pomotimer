@@ -4,6 +4,11 @@
 		<h1>Pomoratimer</h1>
 		<h3><i>Licenced under the <a target="_blank" class="pure-button" href="https://web.archive.org/web/20150512001521/http://mo.morsi.org/blog/node/270">Unofficial AGPLv3</a></i></h3>
 		<p><div id="bigbold">Currently On: <b><u>WORK</u></b></div></p>
+		<h2>Config</h2>
+		<p>
+		<div id='placeToRest'></div>
+		<form name="form" onsubmit="return false">
+			What ratio would you like? <br>&emsp;<input type="radio" value="5break" name="confs" checked='checked'></input>25 minutes work; 5 break<br>&emsp;<input type="radio" value="10break" name="confs"></input>50 min work; 10 min break<br><button type="submit" onclick="Notif1('Will be applied after the current timer ends...');document.getElementById('placeToRest').innerHTML = 'changes will be applied after the current timer expires<br>';GetConfs();return false;">Process</button></form></p>
 	</body>
 	<head>
                 <script src="Pomorado.js"></script>
