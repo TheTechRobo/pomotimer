@@ -21,7 +21,6 @@ const yourFunction = async () => { //https://stackoverflow.com/a/47480429/965408
   document.getElementById("bigbold").innerHTML = "Currently On: <b><u>BREAK</u></b>";
 Notif1("Break time!","Pomotimer alert: BREAK!");
   await delay(BREAK);
-	Notif1("Work time!","Pomotimer alert: Work!");
   document.getElementById("bigbold").innerHTML = "Currently On: <b><u>WORK</u></b>";
 		document.getElementById("placeToRest").innerHTML = ""
 	}
