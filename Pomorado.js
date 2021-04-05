@@ -19,8 +19,10 @@ function GetConfs () {
 
 const yourFunction = async () => { //https://stackoverflow.com/a/47480429/9654083
 	for (;;) {
-	Notif1("Work time!","Pomotimer Alert: WORK!");
-for(i=0; i < times; i++){ if (STOP == 1) { throw new Exception("Confs updated; stopping..."); } await delay(WORK) }
+	Notif1("Work time!","Pomotimer Alert: WORK!");i=0;
+		console.log(i);
+		console.log(38479823793827);
+for (var i=1;i<=120; i++) { i = i + 1;console.log(i);console.log(STOP);if (STOP == 1) { throw new Exception("Confs updated; stopping..."); } else{ await delay(WORK) }}
   document.getElementById("bigbold").innerHTML = "Currently On: <b><u>BREAK</u></b>";
 Notif1("Break time!","Pomotimer alert: BREAK!");
   for(i=0; i < times; i++){ if (STOP == 1) { throw new Exception("Confs updated; stopping...");} await delay(BREAK) }//https://stackoverflow.com/a/10993837/9654083
