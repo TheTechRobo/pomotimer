@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<script src="Pomorado.js"></script>
-		<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" crossorigin="anonymous">
-	</head>
 	<body>
 		<h1>Pomoratimer</h1>
 		<h3><i>Licenced under the <form action="https://web.archive.org/web/20150512001521/http://mo.morsi.org/blog/node/270"><a target="_blank" class="pure-button" href="https://web.archive.org/web/20150512001521/http://mo.morsi.org/blog/node/270">Unofficial AGPLv3</a></i></form></h3>
-		<p class="bigbold">Currently On: <b><u>WORK</u></b></p>
+		<p><div id="bigbold">Currently On: <b><u>WORK</u></b></div></p>
 	</body>
+	<head>
+                <script src="Pomorado.js"></script>
+                <script>Notification.requestPermission(function (permission) {
+      if (permission === "granted") {
+yourFunction();
+      }});
+</script>
+                <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" crossorigin="anonymous">
+        </head>
 </html>
