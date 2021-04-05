@@ -8,7 +8,7 @@
 		<p>
 		<div id='placeToRest'></div>
 		<form name="form" onsubmit="return false">
-			What ratio would you like? <br>&emsp;<input type="radio" value="5break" name="confs" checked='checked'></input>25 minutes work; 5 break<br>&emsp;<input type="radio" value="10break" name="confs"></input>50 min work; 10 min break<br><button type="submit" onclick="Notif1('Will be applied after the current timer ends...');document.getElementById('placeToRest').innerHTML = 'changes will be applied after the current timer expires<br>';GetConfs();return false;">Process</button></form></p>
+			What ratio would you like? <br>&emsp;<input type="radio" value="5break" name="confs" checked='checked'></input>25 minutes work; 5 break<br>&emsp;<input type="radio" value="10break" name="confs"></input>50 min work; 10 min break<br><button type="submit" onclick="Notif1('Timer will restart in a moment...');document.getElementById('placeToRest').innerHTML = 'timer will restart in a moment<br>';GetConfs();STOP = 1;return false;">Process</button></form></p>
 	</body>
 	<head>
                 <script src="Pomorado.js"></script>
