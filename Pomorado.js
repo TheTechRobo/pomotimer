@@ -5,22 +5,22 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
 function GetConfs () {
 	var confs = document.forms["form"]["confs"].value;
 	if (confs == "5break") {
-		WORK = 25000 * 60;
-		BREAK = 5000 * 60;
+		WORK = 25000 / 2;
+		BREAK = 5000 / 2;
 	}
 	else if (confs == "10break") {
-		WORK = 50000 * 60;
-		BREAK = 10000 * 60;
+		WORK = 50000 / 2;
+		BREAK = 10000 / 2;
 	}
 }
 
 const yourFunction = async () => { //https://stackoverflow.com/a/47480429/9654083
 	for (;;) {
 	Notif1("Work time!","Pomotimer Alert: WORK!");
-  await delay(WORK);
+for(var times = 120;var i=0; i < times; i++){ await delay(WORK) }
   document.getElementById("bigbold").innerHTML = "Currently On: <b><u>BREAK</u></b>";
 Notif1("Break time!","Pomotimer alert: BREAK!");
-  await delay(BREAK);
+  for(var times = 120;var i=0; i < times; i++){ await delay(WORK) }
   document.getElementById("bigbold").innerHTML = "Currently On: <b><u>WORK</u></b>";
 		document.getElementById("placeToRest").innerHTML = ""
 	}
